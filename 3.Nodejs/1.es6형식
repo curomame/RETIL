@@ -1,0 +1,22 @@
+express의 현재 시작하기 예제를 보면 다음과 같이 설명되어 있다.
+
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
+위의 내용을 보면 require을 이용해서 해당 모듈을 불러오고 있는데
+이를 ES6로 바꾸는 작업을 어제 해봤다.
+
+뭐 대충만쳐도 알아서 불러와져서 간단하지만 방법을 설명하자면
+
+맨 위에 require부분만 import express from 'express' 이렇게 변경하면 된다.
+
+import export 로 바뀐 es6는 사실 js에 더 관련된 것이므로 js 내용에 나중에 추가할꼬양
